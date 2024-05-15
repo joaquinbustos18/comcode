@@ -1,3 +1,32 @@
+<?php 
+
+//Enviar datos del form a nuestro mail
+if (isset($_POST['enviar'])) {
+  if (!empty($_POST['nombre']) && !empty($_POST['mail']) && !empty($_POST['telefono']) && !empty($_POST['asunto']) && !empty($_POST['mensaje'])) {
+    $nombre = $_POST['nombre'];
+    $asunto = $_POST['asunto'];
+    $email_usuario = $_POST['mail'];
+    $email = "comcodedesarrolloweb@gmail.com";
+    $telefono = $_POST['telefono'];
+    $mensaje = $_POST['mensaje'];
+
+    $mesanje = "Hola! tienes una consulta pendiente" . "\n";
+    $mensaje.= " - Nombre del cliente: " . $nombre . "\n";
+    $mensaje.= " - Email del cliente: " . $email_usuario . "\n";
+    $mensaje.= " - Telefono del cliente: " . $telefono . "\n";
+    $mensaje.= " - Consulta o mensaje: " . $mensaje;
+
+    $header = "From: " . $email_usuario . "\r\n";
+    $header.= "Reply-to: " . $email_usuario . "\r\n";
+    $header.= "X-Mailer: PHP/" . phpversion();
+
+    mail($email, $asunto, $mensaje, $header);
+
+  }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -271,23 +300,27 @@
     <!-- SECCION CONTACTO -->
     <section class="contact" id="contacto">
       <h2 class="heading">Contac<span>tanos!</span></h2>
-      <form action="#">
+      <form action="index.php" method="POST">
         <div class="input-box">
-          <input type="text" placeholder="Nombre Completo" />
-          <input type="email" placeholder="Mail" />
+          <input name="nombre" type="text" placeholder="Nombre Completo" />
+          <input name="mail" type="email" placeholder="Mail" />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Numero de Telefono" />
-          <input type="text" placeholder="Asunto" />
+          <input
+            name="telefono"
+            type="number"
+            placeholder="Numero de Telefono"
+          />
+          <input name="asunto" type="text" placeholder="Asunto" />
         </div>
         <textarea
-          name=""
-          id=""
+          name="mensaje"
+          id="mensaje"
           cols="30"
           rows="10"
           placeholder="Mensaje"
         ></textarea>
-        <input type="submit" value="Enviar Mensaje" class="btn" />
+        <input type="submit" value="Enviar Mensaje" name="enviar" class="btn" />
       </form>
     </section>
 
@@ -295,8 +328,8 @@
     <footer class="footer">
       <div class="footer-text">
         <p>
-          Todos los derechos reservados © ComCode 2023 by bustos joaquin &
-          alvarado enzo |
+          Todos los derechos reservados © ComCode 2023 by Bustos Joaquin &
+          Alvarado Enzo |
         </p>
       </div>
     </footer>
