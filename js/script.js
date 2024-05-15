@@ -63,15 +63,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-/*                 dark mode              */
-
-let darkModeIcon = document.querySelector("#darkMode-icon");
-
-darkModeIcon.onclick = () => {
-  darkModeIcon.classList.toggle("bx-sun");
-  document.body.classList.toggle("dark-mode");
-};
-
 /*                 scroll         */
 document.addEventListener("DOMContentLoaded", function () {
   ScrollReveal({

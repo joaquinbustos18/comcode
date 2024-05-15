@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ComCode</title>
 
+    <link rel="icon" href="img/logo comcode.png" />
+
     <!--  css customizar   -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -19,24 +21,31 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!--   movimientos   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
     <!--   HEADER   -->
 
     <header class="header">
-      <a href="#" class="logo">ComCode</a>
+      <a href="#" class="logo"><img src="img/logo comcode.png" alt="" /></a>
       <nav class="navbar">
         <a href="#inicio" class="active">Inicio</a>
-        <a href="#sobre mi">Sobre Mi</a>
+        <a href="#sobre mi">Sobre nosotros</a>
         <a href="#servicios">Servicios</a>
         <a href="#portafolio">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contacto">Contactanos</a>
       </nav>
-
-      <div class="bx bx-moon" id="darkMode-icon">
-        <box-icon name="moon"></box-icon>
-      </div>
 
       <div class="bx bx-menu" id="menu-icon"></div>
     </header>
@@ -48,10 +57,8 @@
         <h3>Hola, Somos</h3>
         <h1>ComCode</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quae expedita magni repellat aliquam cupiditate repellendus
-          perferendis dolores sit totam alias et, ex molestias laboriosam, quod
-          animi non consequuntur sed!
+          Somos una empresa de desarrollo web y de software, nos entusiasma
+          saber sobre tus ideas y hacerlas realidad!
         </p>
 
         <div class="social-media">
@@ -60,7 +67,7 @@
           <a href="#"><i class="bx bxl-linkedin"></i></a>
         </div>
 
-        <a href="#" class="btn"> Descargar CV</a>
+        <a href="#" class="btn"> Leer más</a>
       </div>
 
       <div class="profession-container">
@@ -75,6 +82,7 @@
           </div>
           <div class="circle"></div>
         </div>
+
         <div class="overlay"></div>
       </div>
       <div class="home-img">
@@ -86,17 +94,12 @@
 
     <section class="about" id="sobre mi">
       <div class="about-img">
-        <img src="img/about.png" alt="holaaaaaaaaaaaaaa" />
+        <img src="img/Triangulo-joaco-enzo.png" alt="" />
       </div>
       <about class="about-content">
         <h2 class="heading">Sobre <span>Nosotros</span></h2>
-        <h3>Hola, estamos aca para ayudarte en tu proyecto!</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsa
-          culpa eos tempora corporis vero assumenda, esse rem saepe dolorem,
-          recusandae vel repudiandae reprehenderit eum qui aperiam sed dolores
-          molestias?
-        </p>
+        <h3>Estamos aquí para ayudarte con tu proyecto!</h3>
+        <p>Impulsamos y construimos tu negocio en el mundo digital.</p>
         <a href="#" class="btn">Leer mas</a>
       </about>
     </section>
@@ -104,16 +107,24 @@
     <!-- SECCION SERVICIOS -->
 
     <section class="services" id="servicios">
-      <h2 class="heading">Nuestros <span>Servicios</span></h2>
+      <h2 class="heading">Nuestros<span> Servicios</span></h2>
 
       <div class="services-container">
         <div class="services-box">
           <i class="bx bx-code"></i>
-          <h3>Desarrollo Front End</h3>
+          <h3>Desarrollo Frontend</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            possimus officiis consequuntur laborum necessitatibus, tenetur
-            expedita ratione nisi quisquam libero et
+            El desarrollo web frontend se refiere a la práctica de construir y
+            Diseñar la interfaz de usuario de un sitio web o aplicación.
+          </p>
+          <a href="" class="btn">Leer mas</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-php"></i>
+          <h3>Desarrollo Backend</h3>
+          <p>
+            El backend es la parte invisible pero esencial de un sitio,
+            responsable del manejo de la lógica y el procesamiento de datos.
           </p>
           <a href="" class="btn">Leer mas</a>
         </div>
@@ -121,19 +132,8 @@
           <i class="bx bxl-postgresql"></i>
           <h3>Base de Datos</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            possimus officiis consequuntur laborum necessitatibus, tenetur
-            expedita ratione nisi quisquam libero et
-          </p>
-          <a href="" class="btn">Leer mas</a>
-        </div>
-        <div class="services-box">
-          <i class="bx bxl-php"></i>
-          <h3>Desarrollo Back End</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            possimus officiis consequuntur laborum necessitatibus, tenetur
-            expedita ratione nisi quisquam libero et
+            Es responsable no solo de almacenar datos, sino también de conectar
+            juntos en una unidad lógica.
           </p>
           <a href="" class="btn">Leer mas</a>
         </div>
@@ -143,84 +143,74 @@
     <!-- SECCION PORTAFOLIO -->
 
     <section class="portafolio" id="portafolio">
-      <h2 class="heading">Ultimos <span>Projectos</span></h2>
+      <h2 class="heading">Ultimos<span> Proyectos</span></h2>
       <div class="portafolio-container">
         <div class="portafolio-box">
-          <img src="img/portfolio1.jpg" alt="" />
+          <img src="img/pag panaderia (foto).PNG" alt="" />
+
           <portafolio class="portafolio-layer">
-            <h4>Web Desing</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Excepturi optio maxime dolor, illo culpa ad amet qui aperiam
-              mollitia perspiciatis officia voluptate aliquid sapiente vitae
-              accusantium exercitationem debitis minima neque
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <a
+              class="boton"
+              target="_blank"
+              href="https://breadbakery.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </portafolio>
         </div>
         <div class="portafolio-box">
-          <img src="img/portfolio2.jpg" alt="" />
+          <img src="img/pag auto (foto).PNG" alt="" />
+          <a href="#"><i class="bx bx-link-external"></i></a>
           <portafolio class="portafolio-layer">
-            <h4>Web Desing</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Excepturi optio maxime dolor, illo culpa ad amet qui aperiam
-              mollitia perspiciatis officia voluptate aliquid sapiente vitae
-              accusantium exercitationem debitis minima neque
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <a
+              class="boton"
+              target="_blank"
+              href="https://carsluxwebsite.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </portafolio>
         </div>
         <div class="portafolio-box">
-          <img src="img/portfolio3.jpg" alt="" />
+          <img src="img/pag gym (foto).PNG" alt="" />
           <portafolio class="portafolio-layer">
-            <h4>Web Desing</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Excepturi optio maxime dolor, illo culpa ad amet qui aperiam
-              mollitia perspiciatis officia voluptate aliquid sapiente vitae
-              accusantium exercitationem debitis minima neque
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <a
+              class="boton"
+              target="_blank"
+              href="https://gymluxsite.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </portafolio>
         </div>
         <div class="portafolio-box">
-          <img src="img/portfolio4.jpg" alt="" />
+          <img src="img/pag auris (foto).PNG" alt="" />
           <portafolio class="portafolio-layer">
-            <h4>Web Desing</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Excepturi optio maxime dolor, illo culpa ad amet qui aperiam
-              mollitia perspiciatis officia voluptate aliquid sapiente vitae
-              accusantium exercitationem debitis minima neque
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <a
+              class="boton"
+              target="_blank"
+              href="https://jblauris.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </portafolio>
         </div>
         <div class="portafolio-box">
-          <img src="img/portfolio5.jpg" alt="" />
+          <img src="img/pag real state (foto).PNG" alt="" />
           <portafolio class="portafolio-layer">
-            <h4>Web Desing</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Excepturi optio maxime dolor, illo culpa ad amet qui aperiam
-              mollitia perspiciatis officia voluptate aliquid sapiente vitae
-              accusantium exercitationem debitis minima neque
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <a
+              class="boton"
+              target="_blank"
+              href="https://realstateslawebsite.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </portafolio>
         </div>
         <div class="portafolio-box">
-          <img src="img/portfolio6.jpg" alt="" />
+          <img src="img/pag sushi (foto).PNG" alt="" />
           <portafolio class="portafolio-layer">
-            <h4>Web Desing</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Excepturi optio maxime dolor, illo culpa ad amet qui aperiam
-              mollitia perspiciatis officia voluptate aliquid sapiente vitae
-              accusantium exercitationem debitis minima neque
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <a
+              class="boton"
+              target="_blank"
+              href="https://sushiresto.netlify.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </portafolio>
         </div>
       </div>
@@ -229,7 +219,7 @@
     <!-- SECCION LENGUAJES -->
 
     <div class="testimonial-container">
-      <h2 class="heading">Nuestro <span>Conocimiento</span></h2>
+      <h2 class="heading">Tecnologia<span> Utilizada</span></h2>
 
       <div class="testimonial-wrapper">
         <div class="testimonial-box mySwiper">
@@ -237,63 +227,37 @@
             <div class="testimonial-slide swiper-slide">
               <img src="img/html.png" alt="" />
               <h3>HTML</h3>
-              <p>
-                Es el código que se utiliza para estructurar y desplegar una
-                página web y sus contenidos.
-              </p>
+              <p></p>
             </div>
             <div class="testimonial-slide swiper-slide">
               <img src="img/css.png" alt="" />
               <h3>CSS</h3>
-              <p>
-                CSS es una función que se agrega a HTML que proporciona tanto a
-                los desarrolladores de sitios Web, así como a los usuarios, más
-                control sobre cómo se muestran las páginas.
-              </p>
+              <p></p>
             </div>
             <div class="testimonial-slide swiper-slide">
               <img src="img/js.png" alt="" />
               <h3>JavaScript</h3>
-              <p>
-                JavaScript es un lenguaje de programación interpretado, dialecto
-                del estándar ECMAScript. Se define como orientado a objetos, ​
-                basado en prototipos, imperativo, débilmente tipado y dinámico.
-              </p>
+              <p></p>
             </div>
             <div class="testimonial-slide swiper-slide">
               <img src="img/sass.png" alt="" />
               <h3>SASS</h3>
-              <p>
-                Sass es un metalenguaje de Hojas de Estilo en Cascada . Es un
-                lenguaje de script que es traducido a CSS, SassScript es el
-                lenguaje de script en sí mismo.
-              </p>
+              <p></p>
             </div>
             <div class="testimonial-slide swiper-slide">
               <img src="img/react.png" alt="" />
               <h3>REACT</h3>
-              <p>
-                React es una librería Javascript de código abierto diseñada para
-                crear interfaces de usuario con el objetivo de facilitar el
-                desarrollo de aplicaciones en una sola página.
-              </p>
+              <p></p>
             </div>
             <div class="testimonial-slide swiper-slide">
               <img src="img/php.png" alt="" />
               <h3>PHP</h3>
-              <p>
-                PHP es un lenguaje de programación interpretado​ del lado del
-                servidor y de uso general que se adapta especialmente al
-                desarrollo web.
-              </p>
+              <p></p>
             </div>
             <div class="testimonial-slide swiper-slide">
               <img src="img/sql.png" alt="" />
               <h3>MySQL</h3>
-              <p>
-                MySQL es un sistema de administración de bases de datos
-                relacionales
-              </p>
+              <p></p>
             </div>
           </div>
 
@@ -310,10 +274,10 @@
       <form action="#">
         <div class="input-box">
           <input type="text" placeholder="Nombre Completo" />
-          <input type="email" placeholder="Correo Electronico" />
+          <input type="email" placeholder="Mail" />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Numero de Celular" />
+          <input type="number" placeholder="Numero de Telefono" />
           <input type="text" placeholder="Asunto" />
         </div>
         <textarea
@@ -321,7 +285,7 @@
           id=""
           cols="30"
           rows="10"
-          placeholder="Tu mensaje"
+          placeholder="Mensaje"
         ></textarea>
         <input type="submit" value="Enviar Mensaje" class="btn" />
       </form>
@@ -331,7 +295,7 @@
     <footer class="footer">
       <div class="footer-text">
         <p>
-          Todos los derechos reservados ComCode $copy; 2023 by bustos joaquin &
+          Todos los derechos reservados © ComCode 2023 by bustos joaquin &
           alvarado enzo |
         </p>
       </div>

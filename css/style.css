@@ -14,15 +14,9 @@
 :root {
   --bg-color: #fdfdfd;
   --texto-color: #333;
-  --color-main: #754ef9;
+  --color-main: #0572a4;
   --color-blanco: #fdfdfd;
   --color-sombra: rgba(0, 0, 0, 2);
-}
-
-.dark-mode {
-  --bg-color: #0b061f;
-  --texto-color: #fdfdfd;
-  --color-sombra: rgba(0, 0, 0, 7);
 }
 
 html {
@@ -42,11 +36,12 @@ body {
   left: 0;
   width: 100%;
   padding: 2rem 7%;
-  background: transparent;
+  background: #fdfdfd;
   display: flex;
   align-items: center;
   z-index: 100;
   transition: 0.5s;
+  margin-bottom: 3rem;
 }
 
 .header .sticky {
@@ -55,11 +50,14 @@ body {
 }
 
 .logo {
-  font-size: 2.5rem;
   color: var(--color-main);
   font-weight: 600;
   cursor: pointer;
   margin-right: auto;
+}
+
+.logo img {
+  height: 3.5rem;
 }
 
 .navbar a {
@@ -93,13 +91,13 @@ body {
   opacity: 0.7;
 }
 
-#darkMode-icon {
+#btn-ingles {
   font-size: 2.4rem;
   color: var(--texto-color);
   cursor: pointer;
 }
 
-.header.sticky #darkMode-icon {
+.header.sticky #btn-ingles {
   color: var(--texto-color);
   opacity: 0.9;
 }
@@ -293,7 +291,7 @@ span {
 }
 
 .about-img img {
-  width: 40w;
+  width: 80rem;
 }
 
 .heading {
@@ -344,6 +342,7 @@ span {
   border-top: 0.6rem solid var(--color-main);
   border-bottom: 0.6rem solid var(--color-main);
   transition: 0.4s ease;
+  width: 90%;
 }
 
 .services-container .services-box:hover {
@@ -410,16 +409,14 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-main));
-  color: var(--color-blanco);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  opacity: 0;
-  transition: 0.5s ease;
+  flex-direction: column-reverse;
+  align-items: end;
+}
+
+.boton {
+  margin-right: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .portafolio-box:hover .portafolio-layer {
@@ -837,27 +834,17 @@ span {
     right: 6rem;
   }
 
-  .home {
-    padding: 0 3% 30rem;
+  .profession-container {
+    display: none;
   }
 
-  .home .profession-box .profession:nth-child(1) {
-    transform: rotate(-90deg) translate(-110px, -220px);
-  }
-  .home .profession-box .profession:nth-child(2) {
-    transform: rotate(0deg) translate(5px, -335px);
+  .services-container {
+    display: flex;
+    flex-direction: column;
   }
 
-  .home .profession-box .profession:nth-child(3) {
-    transform: rotate(90deg) translate(-105px, -440px);
-  }
-
-  .home .profession-box .profession:nth-child(4) {
-    transform: rotate(180deg) translate(-210px, -335px);
-  }
-
-  .contact form .input-box input {
-    width: 100%;
+  .home-content {
+    margin-top: 30rem;
   }
 }
 
